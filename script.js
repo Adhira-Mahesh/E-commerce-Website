@@ -1,0 +1,32 @@
+
+  const container = document.getElementById("grid-4");
+
+  for (let i = 1; i <= 8; i++) {
+    container.innerHTML += `
+      <div class="card ">
+  <div class="card__shine"></div>
+  <div class="card__glow"></div>
+  <div class="card__content">
+   
+    <div style="--bg-color: #a78bfa" class="card__image"></div>
+    <div class="card__text">
+      <p class="card__title">Premium Design</p>
+      <p class="card__description">Hover to reveal stunning effects</p>
+    </div>
+    <div class="card__footer">
+      <div class="card__price">$49.99</div>
+      <div class="card__button">
+        <svg height="16" width="16" viewBox="0 0 24 24">
+          <path
+            stroke-width="2"
+            stroke="currentColor"
+            d="M4 12H20M12 4V20"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+  `}
+console.log(container);
