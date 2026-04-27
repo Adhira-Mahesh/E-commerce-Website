@@ -328,7 +328,7 @@ html {
     
 }
 
-#reasons-grid .card__image{
+#reasons-grid .card{
    
-    
+      height: 300px;
 }
