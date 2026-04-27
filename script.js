@@ -50,7 +50,7 @@ for (let i = 0; i <= 3; i++) {
   <div class="card__glow"></div>
   <div class="card__content">
    
-    <div style="--bg-color: #a78bfa; background: url('images/reasons-img-${i}.png');   background-size: contain;  /* shows full image */
+    <div style="--bg-color: #a78bfa; background: url('./images/reasons-img-${i}.png');   background-size: contain;  /* shows full image */
   background-repeat: no-repeat;
   background-position: center;   ;" class="card__image"></div>
     <div class="card__text">
@@ -65,3 +65,4 @@ for (let i = 0; i <= 3; i++) {
   </div>
 </div>
 `}
+let timer=document.getElementById('sale-timer')
