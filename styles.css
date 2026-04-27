@@ -332,3 +332,19 @@ html {
    
       height: 300px;
 }
+#small-banner {
+  position: relative;
+}
+
+#small-banner div{
+   position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin-left: 20px
+}
+#small-banner div * {
+  color: white;
+  text-align: center;
+}

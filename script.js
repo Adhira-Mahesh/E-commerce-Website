@@ -66,3 +66,24 @@ for (let i = 0; i <= 3; i++) {
 </div>
 `}
 let timer=document.getElementById('sale-timer')
+const endTime= new Date().getTime() + 2 * 60 * 60 * 1000;
+function saleTimerCount() {
+  now= new Date().getTime() 
+  diff= endTime-now
+    if (diff <= 0) {
+    timer.textContent = "00:00:00";
+    return;
+  }
+    const hours = Math.floor(diff / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  timer.textContent =
+    `${String(hours).padStart(2, "0")}:` +
+    `${String(minutes).padStart(2, "0")}:` +
+    `${String(seconds).padStart(2, "0")}`;
+}
+
+// Update every second
+setInterval(saleTimerCount, 1000);
+saleTimerCount();
